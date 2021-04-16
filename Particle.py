@@ -63,11 +63,14 @@ class Particle:
         return self.fitness
 
     def printParticle(self):
-        print("Position: [", self.getX(), ",", self.getY(), "]")
-        print("Velocity: ", self.getVelocity())
-        print("Best Position: [", self.getPBest()
-              [0], ",", self.getPBest()[1], "]")
-        print("Fitness Value: ", self.getFitnessValue())
+        # print("Position: [", self.getX(), ",", self.getY(), "]")
+        # print("Velocity: ", self.getVelocity())
+        # print("Best Position: [", self.getPBest()
+        #       [0], ",", self.getPBest()[1], "]")
+        # print("Fitness Value: ", self.getFitnessValue())
+
+        print("[", self.getX(), ",", self.getY(), "]; ", self.getVelocity(), "; [", self.getPBest()
+              [0], ",", self.getPBest()[1], "]; ", self.getFitnessValue())
 
 
 # particle = Particle(0, 0, 0)

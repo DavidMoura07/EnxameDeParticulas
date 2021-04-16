@@ -115,10 +115,9 @@ def main():
         #     print("############")
         #     particle.printParticle()
 
-    print("Population result: \n")
+    # print("Fitness Value")
     for particle in population:
-        print("############")
-        particle.printParticle()
+        print(particle.getFitnessValue())
 
 
 main()
